@@ -1,3 +1,8 @@
 [build]
   command = "npm run build"
   publish = "build"
+
+[build.environment]
+  # CONFIG_VOSFACTURES_TEST is a non-sensitive test-mode flag (e.g. "true"/"false")
+  # whose value naturally appears in compiled code, causing a false positive.
+  SECRETS_SCAN_OMIT_KEYS = "CONFIG_VOSFACTURES_TEST"
