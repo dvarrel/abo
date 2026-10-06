@@ -184,7 +184,7 @@
   <h2>Quelle balise ?</h2>
 
   <div class="form-group">
-    <label>{form.station_id.label}</label>
+    <label for=station>{form.station_id.label}</label>
     <input type="text" class="form-control" placeholder="123..." bind:value={form.station_id.value} on:keyup={lookupStation}>
   </div>
   
@@ -200,47 +200,47 @@
   </div>
 
   <div class="form-group">
-    <label>{form.sponsor.label}</label>
+    <label  for=station>{form.sponsor.label}</label>
     <input type="text" class="form-control" bind:value={form.sponsor.value}>
   </div>
 
   <h2>Vos coordonnées</h2>
   <div class="form-group">
-    <label>{form.last_name.label}</label>
+    <label for=station>{form.last_name.label}</label>
     <input type="text" class="form-control" bind:value={form.last_name.value}>
   </div>
   <div class="form-group">
-    <label>{form.first_name.label}</label>
+    <label for=station>{form.first_name.label}</label>
     <input type="text" class="form-control" bind:value={form.first_name.value}>
   </div>
   <div class="form-group">
-    <label>{form.email.label}</label>
+    <label for=station>{form.email.label}</label>
     <input type="email" class="form-control" bind:value={form.email.value}>
   </div>
   <div class="form-group">
-    <label>{form.email_confirmation.label}</label>
+    <label for=station>{form.email_confirmation.label}</label>
     <input type="email" class="form-control" bind:value={form.email_confirmation.value}>
   </div>
   
   <h2>Facturation</h2>
   <div class="form-group">
-    <label>{form.invoice_name.label}</label>
+    <label for=station>{form.invoice_name.label}</label>
     <input type="text" class="form-control" bind:value={form.invoice_name.value}>
   </div>
   <div class="form-group">
-    <label>{form.invoice_street.label}</label>
+    <label for=station>{form.invoice_street.label}</label>
     <input type="text" class="form-control" bind:value={form.invoice_street.value}>
   </div>
   <div class="form-group">
-    <label>{form.invoice_post_code.label}</label>
+    <label for=station>{form.invoice_post_code.label}</label>
     <input type="text" class="form-control" bind:value={form.invoice_post_code.value}>
   </div>
   <div class="form-group">
-    <label>{form.invoice_city.label}</label>
+    <label for=station>{form.invoice_city.label}</label>
     <input type="text" class="form-control" bind:value={form.invoice_city.value}>
   </div>
   <div class="form-group">
-    <label>{form.invoice_country.label}</label>
+    <label for=station>{form.invoice_country.label}</label>
     <select class="form-control" bind:value={form.invoice_country.value}>
       {#each countries as country}
         <option value={country[0].toUpperCase()}>
@@ -255,7 +255,7 @@
   <p><strong>20 €</strong>, toutes taxes comprises, pour 1 an</p>
 
   <div class="checkbox">
-    <label>
+    <label for=station>
       <input type="checkbox" bind:checked={form.consent.value}> J'accepte le fonctionnement de l'abonnement et les conditions générales de vente, détaillés au bas de cette page.
     </label>
   </div>
