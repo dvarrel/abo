@@ -55,8 +55,8 @@ export async function POST({ request }) {
           quantity: 1,
         },
       ],
-      cancel_url: 'https://abo.openwindmap.org/',
-      success_url: 'https://abo.openwindmap.org/thank-you',
+      cancel_url: 'https://openwindmap.netlify.app/',
+      success_url: 'https://openwindmap.netlify.app/thank-you',
     })
     
     const redirect = paymentSession.url
